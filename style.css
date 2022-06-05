@@ -212,6 +212,7 @@ h6 {
     justify-content: space-between;
     align-items: center;
     padding: 0 17px;
+    box-sizing: border-box;
 }
 
 .post-profile {
@@ -284,10 +285,15 @@ strong {
     margin-right: 5px;
 }
 
+.sidebar {
+    height: fit-content;
+    position: sticky;
+    top: 111px;
+}
+
 .my-profile {
     width: 255px;
     height: 56px;
-    margin-top: 68px;
     margin-left: 29px;
     display: flex;
     align-items: center;
@@ -369,6 +375,8 @@ strong {
 
     .menu {
         width: 100%;
+        padding: 0 16px 0 20px;
+        box-sizing: border-box;
     }
 }
 
@@ -381,10 +389,12 @@ strong {
         width: 100%;
         height: 54px;
         display: flex;
+        box-sizing: border-box;
         justify-content: space-between;
         align-items: center;
         position: fixed;
         background-color: white;
+        border-bottom: 1px solid #DBDBDB;
         top: 0;
         left: 0;
         z-index: 1;
@@ -392,18 +402,14 @@ strong {
 
     .logo-instagram {
         border: none;
-        margin-left: 21.38px;
     }
-
-    .dm {
-        margin-right: 20px;
-    }
-
+    
     .feed {
         width: 100%;
     }
 
     .stories {
+        background-color: #FFFFFF;
         width: 100%;
         height: 121px;
         border: none;
@@ -439,7 +445,8 @@ strong {
         position: fixed;
         bottom: 0;
         left: 0;
-        padding-right: 19%;
+        padding-right: 0 20px 0 19px;
+        box-sizing: border-box;
     }
 
     .home {
